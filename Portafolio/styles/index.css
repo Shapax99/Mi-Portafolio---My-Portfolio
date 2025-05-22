@@ -1,0 +1,131 @@
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-image: url("img/fondo3.png");
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    header, section, footer {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      min-height: 95vh;
+      background: linear-gradient(to bottom, #1f00a798 60%, #2c2c2c07);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.8;
+    }
+
+
+    .hero h1{
+      font-size: 45px;
+    }
+
+    .hero p{
+      font-size: 23px;
+    }
+
+    .about {
+      display: grid;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color:rgba(255, 255, 255, 0.075);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 55px;
+      opacity: 0.35;
+      transition: 0.5s;
+    }
+
+    .about.aparicion {
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .btn {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .projects {
+      display: grid;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    #projects h1{
+      font-size: 35px;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      text-align: left;
+      background-color:rgba(255, 255, 255, 0.075);
+      opacity: 0.35;
+      transition: 0.5s;
+    }
+
+    .project.aparicion{
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    footer {
+      background: linear-gradient(to top, #1f00a7 10%, #2c2c2c0c);
+      opacity: 0.8;
+    }
+
+.language-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.language-btn img {
+  width: 55px;
+  height: 55px;
+  border: #3d3d3d solid 5px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.language-btn:hover img {
+  transform: scale(1.1);
+}

@@ -1,0 +1,33 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
+/* Animaciones básicas */
+.animate-fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+
+/* Botón de contactarme */
+.btn:active {
+  animation: bounce 0.3s ease;
+}
+
+
+/* Fade-in de toda la página al cargar */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+body.loaded {
+  opacity: 1;
+}
+

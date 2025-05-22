@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Alexis Chapa</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/animacion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero" id="hero">
+    <h1>¡Hi! I am Alexis Chapa</h1>
+    <p>Technical Virtual Assistant | Junior Web Developer | Support</p>
+    <a href="#contacto" class="btn">Contáctame</a>
+  </header>
+
+  <section id="about" class="about">
+    <h1>About me</h1>
+    <p>Hello! I'm a web programmer passionate about technology and development. I'm currently pursuing a degree in video game programming and specialize in tasks that combine logic, organization, and attention to detail.
+      <br>
+      <br>
+        I stand out for being respectful, responsible, communicative, and adaptable. I can help you automate tasks, create web solutions, or support you as a technically-focused virtual assistant.
+        <br>
+        <br>
+        Some of the things I can do for you:
+        <br>
+        - Create or support web pages in HTML, CSS, JavaScript, and Python.
+        <br>  
+        - Corregir errores o realizar mejoras sencillas en sitios web.
+        <br>
+        - Fix bugs or make simple improvements to websites.
+        <br>
+        - Assist you with administrative or technical support tasks.
+        <br>
+        - Research, transcribe, or assist in data management.
+        <br>
+        <br>
+        I'm committed to learning, improving, and delivering quality work. I'd be happy to help you with your next project.
+        <br>
+        This page I created isn't the most advanced you'll see, but I'm slowly improving in this area. In the future, I'll be creating more advanced pages, either with a team or on my own.
+      </p>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="projects">
+      <div class="project" id="project">
+        <h3>GUI on Addition and Subtraction of Arrays in Python</h3>
+        <p>This is a small project I did in my internship. 
+          <br>
+          <br>
+           It is a small program created in Python that can add and subtract matrices from 1x1 to 5x5.
+           It has a striking and intuitive interface. The Tkinter library was used to create the GUI.
+        </p>
+        <a href="javascript:void(0)" class="btn ver-proyecto">See project</a>
+      </div>
+      <div class="project" id="project">
+        <h3>Future project...</h3>
+        <p>Future project...</p>
+        <a href="javascript:void(0)" class="btn ver-proyecto">See project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contact</h2>
+    <p>
+      Write to me at <a href="mailto:alexiscantu149@gmail.com">alexiscantu149@gmail.com</a>
+      <br>
+      <p>(Demo form, not functional at the moment)</p>
+    </p>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Alexis Chapa. All rights reserved.</p>
+  </footer>
+
+<!-- Modal con carrusel -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content animate-fade">
+    <span class="close-btn" onclick="cerrarModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <div class="carousel">
+      <img id="modal-img" src="" alt="Imagen del proyecto" />
+      <div class="carousel-controls">
+        <button id="prev-img">&#10094;</button>
+        <button id="next-img">&#10095;</button>
+      </div>
+    </div>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<button id="language-toggle" class="language-btn" title="Cambiar Idioma a Español">
+  <img id="lang-icon" src="img/ES.png" alt="Idioma" />
+</button>
+
+</body>
+<script src="scripts/index_EN.js"></script>
+<script src="scripts/modal_EN.js"></script>
+<script src="scripts/animacion.js"></script>
+<script src="scripts/carrusel.js"></script>
+</html>

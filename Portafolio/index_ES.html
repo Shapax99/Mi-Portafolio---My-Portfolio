@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Alexis Chapa</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/animacion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero" id="hero">
+    <h1>¡Hola! Soy Alexis Chapa</h1>
+    <p>Technical Virtual Assistant | Junior Web Developer | Support</p>
+    <a href="#contacto" class="btn">Contáctame</a>
+  </header>
+
+  <section id="about" class="about">
+    <h1>Sobre mí</h1>
+    <p>¡Hola! Soy programador web apasionado por la tecnología y el desarrollo. Actualmente estoy cursando una licenciatura en programación de videojuegos y me especializo en tareas que combinan lógica, organización y atención al detalle.
+      <br>
+      <br>
+        Me destaco por ser respetuoso, responsable, comunicativo y adaptable. Puedo ayudarte a automatizar tareas, crear soluciones web o apoyarte como asistente virtual con enfoque técnico.
+        <br>
+        <br>
+        Algunas de las cosas que puedo hacer por ti:
+        <br>
+        - Crear o dar soporte a páginas web en HTML, CSS, JavaScript y Python.
+        <br>  
+        - Corregir errores o realizar mejoras sencillas en sitios web.
+        <br>
+        - Automatizar procesos repetitivos con scripts.
+        <br>
+        - Asistirte con tareas administrativas o de soporte técnico.
+        <br>
+        - Investigar, transcribir o asistir en la gestión de datos.
+        <br>
+        <br>
+        Me comprometo a aprender, mejorar y entregar un trabajo de calidad. Estaré encantado de ayudarte con tu próximo proyecto.
+        <br>
+        Esta pagina que cree no es lo mas avanzaro que veran pero estoy mejorando poco a poco en este campo, ya en el futuro ire haciendo paginas mas avanzadas
+        ya sea con un equipo o por mi cuenta.
+      </p>
+  </section>
+
+  <section id="projects">
+    <h1>Proyectos</h1>
+    <div class="projects">
+      <div class="project" id="project">
+        <h3>GUI Sobre Suma y Resta de matrices en Python</h3>
+        <p>Esto es un pequeño proyecto que hice en mis practicas. 
+          <br>
+          <br>
+           Es un pequeño programa creado en Python que puede sumar y restar matrices del tamaño 1x1 hasta 5x5.
+           Tiene un interfaz llamativo e intuitivo. Se uso la libreria tkinter para poder crear la interfaz (GUI).
+        </p>
+        <a href="javascript:void(0)" class="btn ver-proyecto">Ver proyecto</a>
+      </div>
+      <div class="project" id="project">
+        <h3>Proyecto futuro...</h3>
+        <p>Proyecto futuro...</p>
+        <a href="javascript:void(0)" class="btn ver-proyecto">Ver proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>
+      Escríbeme a <a href="mailto:juan@email.com">alexiscantu149@gmail.com</a>
+      <br>
+      <p>(Formulario demo, no funcional por el momento)</p>
+    </p>
+    <form class="contact-form">
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje" rows="5" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Alexis Chapa. Todos los derechos reservados.</p>
+  </footer>
+
+<!-- Modal con carrusel -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content animate-fade">
+    <span class="close-btn" onclick="cerrarModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <div class="carousel">
+      <img id="modal-img" src="" alt="Imagen del proyecto" />
+      <div class="carousel-controls">
+        <button id="prev-img">&#10094;</button>
+        <button id="next-img">&#10095;</button>
+      </div>
+    </div>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<button id="language-toggle" class="language-btn" title="Change lenguage to English">
+  <img id="lang-icon" src="img/EU.png" alt="Idioma"/>
+</button>
+
+</body>
+<script src="scripts/index_ES.js"></script>
+<script src="scripts/modal_ES.js"></script>
+<script src="scripts/animacion.js"></script>
+<script src="scripts/carrusel.js"></script>
+</html>
