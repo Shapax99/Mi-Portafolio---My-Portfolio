@@ -12,7 +12,7 @@ const imageGroups = {
 //Titulo y descripcion de cada modal de proyecto correspondinte por grupos
 const projectDetails = {
   0: {
-    title: 'Echo UI in Python for adding or subtracting matrices',
+    title: 'Python UI for adding and subtracting matrices',
     desc: 'Small interface made in Python to add and subtract matrices from 1x1 to 5x5'
   },
   1: {
