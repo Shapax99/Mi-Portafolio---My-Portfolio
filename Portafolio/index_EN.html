@@ -11,9 +11,9 @@
 </head>
 <body>
   <header class="hero" id="hero">
-    <h1>¡Hi! I am Alexis Chapa</h1>
+    <h1>Hi! I'm Alexis Chapa</h1>
     <p>Technical Virtual Assistant | Junior Web Developer | Support</p>
-    <a href="#contacto" class="btn">Contáctame</a>
+    <a href="#contacto" class="btn">Contact me</a>
   </header>
 
   <section id="about" class="about">
@@ -28,9 +28,9 @@
         <br>
         - Create or support web pages in HTML, CSS, JavaScript, and Python.
         <br>  
-        - Corregir errores o realizar mejoras sencillas en sitios web.
-        <br>
         - Fix bugs or make simple improvements to websites.
+        <br>
+        - Automate repetitive processes with scripts.
         <br>
         - Assist you with administrative or technical support tasks.
         <br>
@@ -39,7 +39,7 @@
         <br>
         I'm committed to learning, improving, and delivering quality work. I'd be happy to help you with your next project.
         <br>
-        This page I created isn't the most advanced you'll see, but I'm slowly improving in this area. In the future, I'll be creating more advanced pages, either with a team or on my own.
+        This page I created isn't the most advanced you'll see, but I'm slowly improving in this field. In the future, I'll be creating more advanced pages, either with a team or on my own.
       </p>
   </section>
 
@@ -47,19 +47,37 @@
     <h1>Projects</h1>
     <div class="projects">
       <div class="project" id="project">
-        <h3>GUI on Addition and Subtraction of Arrays in Python</h3>
-        <p>This is a small project I did in my internship. 
+        <h3>GUI for Matrix Addition and Subtraction in Python</h3>
+        <p>This is a small project I did in my practice. 
           <br>
           <br>
-           It is a small program created in Python that can add and subtract matrices from 1x1 to 5x5.
-           It has a striking and intuitive interface. The Tkinter library was used to create the GUI.
+           It is a small program created in Python that can add and subtract matrices from size 1x1 to 5x5.
+           It has an attractive and intuitive interface. The tkinter library was used to create the GUI.
         </p>
-        <a href="javascript:void(0)" class="btn ver-proyecto">See project</a>
+        <a href="javascript:void(0)" class="btn ver-proyecto">View project</a>
       </div>
       <div class="project" id="project">
+        <h3>SIA Web System (Academic Integral System)</h3>
+        <p>This is a web system I created for a High School, where administrative staff and teachers 
+           can review students' background history, as well as their records, justifications and messages,
+           in order to have better academic control of students. 
+           <br>
+           <br>
+           The system has a role-based login, secure password system and security tokens.
+           Within the system there is a Student Search where you can search by enrollment (ID), names, surnames
+           or groups. When you have the selected student, you can break down their academic history such as their background, justifications
+           and messages, where you can add, edit or delete. It also has a Database Administrator system for
+           Administrative roles, they can modify and has a Search with Filter to have more specific results.
+           <br>
+           <br>
+           The system is developed with React, Node.js, Express and PostgreSQL.
+          </p>
+        <a href="javascript:void(0)" class="btn ver-proyecto">View project</a>
+      </div>
+        <div class="project" id="project">
         <h3>Future project...</h3>
         <p>Future project...</p>
-        <a href="javascript:void(0)" class="btn ver-proyecto">See project</a>
+        <a href="javascript:void(0)" class="btn ver-proyecto">View project</a>
       </div>
     </div>
   </section>
@@ -80,6 +98,7 @@
   </section>
   <footer>
     <p>&copy; <span id="year"></span> Alexis Chapa. All rights reserved.</p>
+    <p>2.0.0v</p>
   </footer>
 
 <!-- Modal con carrusel -->
@@ -88,7 +107,9 @@
     <span class="close-btn" onclick="cerrarModal()">&times;</span>
     <h2 id="modal-title"></h2>
     <div class="carousel">
-      <img id="modal-img" src="" alt="Imagen del proyecto" />
+      <div class="image-container">
+        <img id="modal-img" src="" alt="Imagen del proyecto" />
+      </div>
       <div class="carousel-controls">
         <button id="prev-img">&#10094;</button>
         <button id="next-img">&#10095;</button>

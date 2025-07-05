@@ -3,22 +3,27 @@ const modalTitulo = document.getElementById('modal-title');
 const modalImg = document.getElementById('modal-img');
 const modalDesc = document.getElementById('modal-desc');
 
-//Cargar imagenes para los modales de cada proyecto, divididos por numero de grupo 
+//Load images for each project modal, divided by group number
 const imageGroups = {
   0: ['img/1.png', 'img/2.png'],
-  1: ['img/proyecto2-1.jpg', 'img/proyecto2-2.jpg']
+  1: ['img/3.png', 'img/4.png', 'img/5.png', 'img/6.png'],
+  2: ['']
 };
 
-//Titulo y descripcion de cada modal de proyecto correspondinte por grupos
+//Title and description of each corresponding project modal by groups
 const projectDetails = {
   0: {
-    title: 'Python UI for adding and subtracting matrices',
+    title: 'User Interface made in Python for adding or subtracting matrices',
     desc: 'Small interface made in Python to add and subtract matrices from 1x1 to 5x5'
   },
   1: {
-    title: 'Soon...',
-    desc: 'Soon...'
-  }
+    title: 'SIA (Academic Integral System)',
+    desc: 'Web system for a High School to manage students\' academic records, backgrounds, justifications and messages with role-based access and secure authentication.'
+  },
+  2: {
+    title: 'Future project...',
+    desc: 'Future project...'
+  },
 };
 
 let currentImages = [];

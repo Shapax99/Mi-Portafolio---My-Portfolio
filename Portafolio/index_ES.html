@@ -58,6 +58,24 @@
         <a href="javascript:void(0)" class="btn ver-proyecto">Ver proyecto</a>
       </div>
       <div class="project" id="project">
+        <h3>Sistema Web SIA (Sistema Integral Académico)</h3>
+        <p>Esto es un sistema web que cree para una escuela Preparatoria, donde el personal administrativo y docentes 
+           pueden revisar el historial de antecendentes de los alumnos, asi como sus antecedentes, justificantes y recados,
+           para asi tener un mejor control academico de los alumnos. 
+           <br>
+           <br>
+           El sistema cuenta con un inicio de sesion manejado por roles, tiene un sistema de contraseñas seguras y tokens de
+           seguridad. Dentro del sistema tiene un Buscador de Alumnos donde se puede buscar por matriculas (ID), nombres, apellidos
+           o grupos, cuando se tenga el alumno seleccionado se podra desglozar su historial academico como sus antecedentes, justificantes
+           y recados, donde se podra agregar, editar o eliminar. Tambien cuenta con un sistema de Administrador de Base de Datos para los
+           roles Administrativos, los pueden modificar y tiene un un Buscador con Filtrador para tener resultados mas especificos.
+           <br>
+           <br>
+           El sistema esta desarrolado con React, Node.js, Express y PostgreSQL.
+          </p>
+        <a href="javascript:void(0)" class="btn ver-proyecto">Ver proyecto</a>
+      </div>
+        <div class="project" id="project">
         <h3>Proyecto futuro...</h3>
         <p>Proyecto futuro...</p>
         <a href="javascript:void(0)" class="btn ver-proyecto">Ver proyecto</a>
@@ -80,7 +98,8 @@
     </form>
   </section>
   <footer>
-    <p>&copy; <span id="year"></span> Alexis Chapa. Todos los derechos reservados.</p>
+    <p>&copy; <span id="year"></span> Alexis Chapa. Todos los derechos reservados</p>
+    <p>2.0.0v</p>
   </footer>
 
 <!-- Modal con carrusel -->
@@ -89,7 +108,9 @@
     <span class="close-btn" onclick="cerrarModal()">&times;</span>
     <h2 id="modal-title"></h2>
     <div class="carousel">
-      <img id="modal-img" src="" alt="Imagen del proyecto" />
+      <div class="image-container">
+        <img id="modal-img" src="" alt="Imagen del proyecto" />
+      </div>
       <div class="carousel-controls">
         <button id="prev-img">&#10094;</button>
         <button id="next-img">&#10095;</button>
